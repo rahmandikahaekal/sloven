@@ -1,0 +1,156 @@
+/* ---------- Reset CSS ---------- */
+html,
+body {
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #333333;
+    width: 100%;
+    padding: 0;
+    font-family: 'Montserrat','Roboto',cursive;
+    font-weight: 300;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button,
+a span {
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+
+*,
+*:before,
+*:after {
+    -webkitbox-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul, 
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    width: 10%;
+    border-top: 2.5px solid #eee;
+}
+
+h1 {
+    font-family: 'Montserrat',cursive;
+    font-size: 6rem;
+    line-height: 4rem;
+    font-weight: 300;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fffb00;
+}
+
+/* ---------- Slider ---------- */
+
+.home {
+    background: url(../images/127H.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main_home .main_home_content i {
+    font-size: 8em;
+    line-height: 1.2em;
+}
+
+.main_home .main_home_content h1 {
+    font-weight: bold;
+    line-height: 6rem;
+    margin: 0 0 60px 0;
+    color: #fff;
+}
+
+.main_home .main_home_content p {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+.home_overlay {
+	background:rgba(0, 0, 0, .6);
+	width:100%;
+	top:0;
+	left:0;
+}
+
+.main_home_content {
+    max-height: 100%;
+    padding: 350px 0 250px 0px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* ---------- About ---------- */
+.main_about .head_title h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.main_about .head_title p {
+    font-family: 'Roboto',cursive;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    word-spacing: 2.5px;
+}
+
+.main_about .head_title hr {
+    border-color: #000000;
+}
+
+.main_about_content p {
+    
+}
