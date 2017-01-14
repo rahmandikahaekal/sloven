@@ -70,14 +70,43 @@ h1 {
     font-weight: 300;
 }
 
+.title_content {
+    padding-top: 55px;
+    font-weight: bold;
+}
+
 /* ---------- Navbar ---------- */
 .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 8px;
+  margin-top: 23px;
+  transition:all 0.7s ease 0s;
+  -webkit-transition:all 0.7s ease 0s;
+  -moz-transition:all 0.7s ease 0s;
+  -o-transition:all 0.7s ease 0s;
+  -ms-transition:all 0.7s ease 0s;
 }
 
 .navbar-default .navbar-brand {
     color: #fff;
+}
+
+.navbar-default .navbar-nav li a {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #fffb00;
+    background: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -133,6 +162,9 @@ h1 {
 }
 
 /* ---------- About ---------- */
+.main_about {
+    padding: 80px 0px;
+}
 .main_about .head_title h2 {
     font-size: 20px;
     font-weight: bold;
@@ -152,5 +184,19 @@ h1 {
 }
 
 .main_about_content p {
-    
+    font-family: 'Montserrat',cursive;
+    font-size: 18px;
+    padding: 40px 0px;
+}
+
+.main_about_content {
+    padding-bottom: 80px;
+}
+
+.main_about_content_area .fa:before {
+    background: rgba(241, 196, 15, 1);
+    padding: 35px 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
 }
