@@ -53,12 +53,20 @@ function onScroll(event){
       var windowScrollPosTop = jQuery(window).scrollTop();
 
       if(windowScrollPosTop >= 250) {
-        jQuery(".navbar-default").css({"margin-top": "0px", "margin-bottom": "0","background-color": "#000"});
-        jQuery("#home .container .gallery .Logo").css({"margin": "170px auto 0px auto"});
+        jQuery(".navbar-default").css({"padding-top": "0px",
+                                       "padding-bottom": "0",
+                                       "background-color": "rgba(255,255,255,0.99)",
+                                       "box-shadow": "0 1px 3px rgba(50, 50, 50, 0.4)"});
+        jQuery(".navbar-default .navbar-nav li a").css({"color": "#000"});
+        jQuery(".navbar-default .navbar-brand").css({"color": "#000"})
       }
       else{
-        jQuery(".navbar-default").css({"margin-top": "25px", "margin-bottom": "15px","background-color": "transparent"});
-        jQuery("#home .container .gallery .Logo").css({"margin": "170px auto 0px auto"});    
+        jQuery(".navbar-default").css({"padding-top": "25px",
+                                       "padding-bottom": "15px",
+                                       "background-color": "transparent",
+                                       "box-shadow": "none"});
+        jQuery(".navbar-default .navbar-nav li a").css({"color": "#fff"});
+        jQuery(".navbar-default .navbar-brand").css({"color": "#fff"})
       }
    });
 
