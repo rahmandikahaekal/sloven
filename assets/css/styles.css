@@ -27,6 +27,7 @@ img {
     user-select: none;
     -webkit-user-drag: none;
     user-drag: none;
+    max-width: 100%;
 }
 
 .bg_overlay {
@@ -34,6 +35,18 @@ img {
 	width:100%;
 	top:0;
 	left:0;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.p-tb200 {
+    padding: 200px 0px;
 }
 
 /* LINKS AND BUTTONS */
@@ -76,10 +89,6 @@ a span {
     color: #fff;
 }
 
-img {
-    max-width: 100%;
-}
-
 h1 {
     font-family: 'Montserrat',cursive;
     font-size: 6rem;
@@ -105,7 +114,7 @@ h2 {
 
 hr {
     width: 10%;
-    border-top: 2.5px solid #eee;
+    border: 1px solid #eee;
 }
 
 ul, 
@@ -194,10 +203,7 @@ ol {
 }
 
 /* ---------- About ---------- */
-.main_about .head_title hr {
-    border-color: #f1c40f;
-}
-
+.main_about hr { border-color: #333; }
 .main_about_content p {
     font-family: 'Montserrat',cursive;
     font-size: 14px;
@@ -297,7 +303,7 @@ ol {
 }
 
 .team .head_title hr {
-    border-color: #000000;
+    border-color: #333;
 }
 
 .single_team {
@@ -397,8 +403,8 @@ ol {
     color: #fff;
 }
 
-.bg_overlay {background: rgba(0, 0, 0, 0.5)}
 .skill .container { padding: 80px 0px}
+.skill .head_title { padding-bottom: 50px}
 .skill .head_title p { text-transform:inherit}
 
 .skill-item-outer,.skill-item-outer .skill-item-label-outer { -webkit-transition:all .25s ease;-o-transition:all .25s ease}
@@ -611,4 +617,70 @@ ol {
     font-family: 'Roboto',sans-serif;
     font-size: 16px;
     word-spacing: 5px;
+}
+
+/* work */
+
+.work .head_title p { text-transform: inherit }
+
+.work_nav {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.work_nav ul li {
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0px 2px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #f1cf0f;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.work_nav ul li:hover {
+    background: #000000;
+    color: #f1c40f;
+}
+
+.work_nav .active {
+    background: #000000;
+    color: #f1c40f;
+}
+
+.main_work,
+.main_work .item {
+    padding: 0;
+}
+
+.main_work .work_title_content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.69);
+    color: #f1c40f;
+    padding: 100px 35px;
+    margin: 10px 15px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.item_hover:hover .work_title_content {
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+}   
+
+.work_title_content h3 {
+    transform: translateY(-20px);
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.item_hover:hover h3 {
+    transform: translateY(5px);
+    transition: all 0.3s ease-in-out 0s;
 }
