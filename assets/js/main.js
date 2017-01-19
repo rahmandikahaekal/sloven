@@ -1,4 +1,5 @@
- new WOW().init();
+// Animation click function
+new WOW().init();
 
 // Active isotope with jQuery code :
 $('.main_work').isotope({
@@ -16,4 +17,27 @@ $('.work_nav ul li').click(function() {
         filter: selector
     });
     return false;
-})
+});
+
+
+// Counter Up
+var options = {
+    useEasing : true,
+    useGrouping : false,
+    separator : ',',
+    decimal : '.',
+    prefix : '',
+    suffix : ''
+};
+
+var demo = new CountUp("counter1", 0, 1456, 0, 10, options);
+demo.start();
+
+var demo = new CountUp("counter2", 0, 2456, 0, 10, options);
+demo.start();
+
+var demo = new CountUp("counter3", 0, 3125, 0, 10, options);
+demo.start();
+
+var demo = new CountUp("counter4", 0, 2478, 0, 10, options);
+demo.start();
