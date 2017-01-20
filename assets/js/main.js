@@ -19,7 +19,6 @@ $('.work_nav ul li').click(function() {
     return false;
 });
 
-
 // Counter Up
 var options = {
     useEasing : true,
@@ -41,3 +40,21 @@ demo.start();
 
 var demo = new CountUp("counter4", 0, 2478, 0, 10, options);
 demo.start();
+
+//(function ($) {
+//    'use strict';
+// 
+//    $('.video_btn').magnificPopup({
+//        disableOn: 0,
+//        type: 'iframe',
+//        mainClass: 'mfp-fade',
+//        removalDelay: 160,
+//        preloader: true,
+//        fixedContentPos: false
+//    });
+//
+//    if ($.fn.mb_YTPlayer) {
+//        $('.player').mb_YTPlayer();
+//    }
+//
+//})(jQuery);

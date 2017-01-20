@@ -327,6 +327,7 @@ ol {
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
     font-weight: 200;
+    padding: 10px 0px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -393,7 +394,7 @@ ol {
 
 /* skill */
 .skill {
-    background: url(../images/bg_01.jpg) no-repeat center center;
+    background: url(../images/parallax2.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -771,4 +772,21 @@ ol {
     font-size: 12px;
     font-weight: normal;
     padding: 10px 15px;
+}
+
+/* video */
+.video.bg_overlay {
+    background: url(../images/parallax1.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    color: #fff;
+}
+.main_video { padding: 13% 0 }
+.main_video img { 
+    padding: 20px 0px;
+    display: inline-block;
 }
