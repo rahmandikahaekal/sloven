@@ -790,3 +790,15 @@ ol {
     padding: 20px 0px;
     display: inline-block;
 }
+
+/* client */
+.client .main_client p {
+    font-size: 16px;
+    text-transform: inherit;
+}
+
+.pricing_table { padding-top: 30px }
+.pricing_table .pricing_list .list_price {
+    padding: 0px 50px;
+    display: inline-block;
+}
