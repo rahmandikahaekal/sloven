@@ -834,7 +834,13 @@ ol {
 }
 
 .pricing_table .columns:nth-child(2) .price .header {
-    padding: 45px 0px;
+    padding: 35px 0px 0px 0px;
+}
+
+.pricing_table .columns:nth-child(2) .price .child_header {
+    font-family: fantasy;
+    padding-top: 0px;
+    padding-bottom: 34px;
 }
 
 .pricing_table .price li {
@@ -845,13 +851,13 @@ ol {
 .pricing_table .price .grey {
     font-family: 'Roboto',sans-serif;
     font-size: 56px; 
-    padding: 40px 0px;
+    padding: 14px 0px;
     background-color: #e8e8e8;
 }
 
 .pricing_table .price .orange {
     font-family: 'Roboto',sans-serif;
-    padding: 40px 0px;
+    padding: 10px 0px;
     background-color: #f1c40c;
 }
 
@@ -866,4 +872,37 @@ ol {
     position: relative;
     left: -10px;
     text-transform: uppercase;
+}
+
+.pricing_table .price li:nth-child(3) { padding-top: 20px }
+
+.pricing_table .price li:last-child {
+    margin: 30px 0px 30px 0px;
+}
+.pricing_table .price li a {
+    font-family: 'Roboto',sans-serif;
+    border: 2px solid #000;
+    border-radius: 50px;
+    color: #000;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.pricing_table .price li a:hover {
+    background-color: #f1c40c;
+    border-color: #f1c40c;
+    color: #fff;
+}
+
+.pricing_table .columns:nth-child(2) .price li a {
+    background-color: #f1c40c;
+    border: 2px solid #f1c40c;
+    color: #fff;
+}
+
+.pricing_table .columns:nth-child(2) .price li a:hover {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    color: #000;
 }
