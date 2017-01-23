@@ -1,4 +1,16 @@
-// Animation click function
+/* ==============================================
+ Counter Up
+ =============================================== */
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 100,
+        time: 800
+    });
+});
+
+/* ==============================================
+ WOW plugin triggres animate.css
+ =============================================== */
 new WOW().init();
 
 // Active isotope with jQuery code :
@@ -19,42 +31,21 @@ $('.work_nav ul li').click(function() {
     return false;
 });
 
-// Counter Up
-var options = {
-    useEasing : true,
-    useGrouping : false,
-    separator : ',',
-    decimal : '.',
-    prefix : '',
-    suffix : ''
-};
-
-var demo = new CountUp("counter1", 0, 1456, 0, 10, options);
-demo.start();
-
-var demo = new CountUp("counter2", 0, 2456, 0, 10, options);
-demo.start();
-
-var demo = new CountUp("counter3", 0, 3125, 0, 10, options);
-demo.start();
-
-var demo = new CountUp("counter4", 0, 2478, 0, 10, options);
-demo.start();
-
-//(function ($) {
-//    'use strict';
-// 
-//    $('.video_btn').magnificPopup({
-//        disableOn: 0,
-//        type: 'iframe',
-//        mainClass: 'mfp-fade',
-//        removalDelay: 160,
-//        preloader: true,
-//        fixedContentPos: false
-//    });
-//
-//    if ($.fn.mb_YTPlayer) {
-//        $('.player').mb_YTPlayer();
-//    }
-//
-//})(jQuery);
+/* ==============================================
+ OWL Carousel
+ =============================================== */
+$(document).ready(function() {
+    
+    $("#testi-carousel").owlCarousel({
+        //Most important owl features
+        items: 1,
+        itemsCustom: false,
+        itemsDesktop: [1199,1],
+        itemsDesktopSmall: [980,1],
+        itemsTablet: [768,1],
+        itemsTabletSmall: false,
+        itemsMobile: [479,1],
+        singleItem: false,
+        startDragging: true
+    });
+});
