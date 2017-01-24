@@ -810,21 +810,23 @@ ol {
 }
 
 /* video */
-.video.bg_overlay {
-    background: url(../images/bg_video.jpg) no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 0;
+.video-popup-section {
+    text-align:center;
+    position:relative;
+    z-index:1;
+    background-size:cover;
+    width:100%;
+    background-image:url(../images/bg_video.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+.video-popup-section .container {
     color: #fff;
+    padding: 11em 0px;
 }
-.main_video { padding: 13% 0 }
-.main_video img { 
-    padding: 20px 0px;
-    display: inline-block;
-}
+.video-popup-btn { display:inline-block }
+
 
 /* client */
 .client .main_client p {
@@ -1050,6 +1052,68 @@ ol {
     display: inline-block;
     width: 80%;
 }
+
+/* Google Map */
+.map {
+    position: relative;
+    width: 100%;
+    height: 8em;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+#my-map {
+    height: 100%;
+    height: 20em;
+}
+
+.show-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.25em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1c40c;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.show-map span,
+.show-map i {
+    display: block;
+    color: #ffffff;
+}
+
+.opened {
+    height: 20em;
+}
+
+.opened .show-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: table;
+    text-align: center;
+    z-index: 2;
+}
+
 
 /* footer */
 .footer {

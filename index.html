@@ -14,11 +14,14 @@
         <link href="assets/css/animate.css" rel="stylesheet">
         <link href="assets/css/elegant-icons.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet">
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
         <link href="assets/css/owl.carousel.css" rel="stylesheet">
         <link href="assets/css/owl.theme.css" rel="stylesheet">
         
         
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
+        
+        <script src="assets/js/modernizr-custom.js"></script>
         
     </head>
 
@@ -578,18 +581,13 @@
             </div>
         </section><!-- End blog section -->
         
-        <section id="video" class="video bg_overlay">
-            <div class="bg_overlay">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="main_video">
-                            <h2>AMAZING VIDEO BACKGROUND</h2>
-                            <a href="https://www.youtube.com/watch?v=ANwf8AE3_d0&list=PLxSSvIJc8SWnZ9hoobO-vn0oKozoUEsjj"><img class="img-responsive" src="assets/images/play.png" alt="" ></a>
-                        </div>
-                    </div>
-                </div>
+        <div id="video" class="video-popup-section overlay pd-top-3x">
+            <div class="container bg_overlay">
+                <h2>AMAZING VIDEO BACKGROUND</h2>
+                    <a href="https://www.youtube.com/watch?v=uT-w9XTeN6I" class="video-popup-btn"><img src="assets/images/play.png" class="img-responsive"></a>
             </div>
-        </section><!-- End video section -->
+        </div><!-- end section video-->
+
         
         <section id="client" class="client">
             <div class="container">
@@ -753,12 +751,11 @@
             </div>
         </div>
         
-<!--
-        <section class="map">
-            <a class="show-map"><div class="helper"><i class="fa-icon-plus"></i><span>Show Map</span></div></a>
+        
+        <div class="map">
+            <a class="show-map"><div class="helper"><i data-icon="&#xe01f;"></i><span>Find out us on google map</span></div></a>
             <div id="my-map"></div>
-        </section>
--->
+        </div>
 
         
         <footer id="footer" class="footer">
@@ -788,10 +785,8 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <!-- Easing plugins smooth scroll -->
         <script src="assets/js/jquery.easing.1.3.min.js"></script>
-        <!-- Magnific Popup Script -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!-- Smoothscroll Script -->
-<!--        <script src="assets/js/smoothscroll.js"></script>-->
+        <script src="assets/js/smoothscroll.js"></script>
         <!-- jQuery Nav Custom -->
         <script src="assets/js/jquery.nav-custom.js"></script>
         <!-- Digit CountDown Plugin -->
@@ -804,7 +799,8 @@
         <script src="assets/js/isotope.pkgd.min.js"></script>
         <!-- Customize JS Plugin edit accordion -->
         <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/jquery.validate.min.js"></script>
+        <!-- Magnific Popup Script -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
         <script src="http://maps.google.com/maps/api/js?key=AIzaSyAuOV2dQJSN2iQWp76ACxzd8Tv8RuJfgFs"></script>
         <script src="assets/js/gmap3.min.js"></script>

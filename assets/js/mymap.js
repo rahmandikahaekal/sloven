@@ -101,12 +101,12 @@ $(".show-map").click(function(){
     if ($(".map").hasClass("opened")) {    
             $(".map").removeClass("opened");
             $(".show-map i").removeClass("fa-minus");
-            $(".show-map span").text("Show Map");
+            $(".show-map span").text("Find out us on google map");
         }
     else {   
             $(".map").addClass("opened");
             $(".show-map i").addClass("fa-minus");
-            $(".show-map span").text("Hide Map");
+            $(".show-map span").text("now you look us !");
         }
 });
 

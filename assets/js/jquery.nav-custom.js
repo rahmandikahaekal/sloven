@@ -2,10 +2,6 @@
 
 jQuery(document).ready(function() {
   
-  //lightbox
-  $(document).ready(function(){
-    $('a').nivoLightbox();
-  });
 	//this code for the croll animation
   $(document).ready(function () {
     $(document).on("scroll", onScroll);
