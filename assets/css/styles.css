@@ -177,7 +177,7 @@ ol {
 }
 
 .main_home .main_home_content i {
-    font-size: 8em;
+    font-size: 8rem;
     line-height: 1.2em;
 }
 
@@ -1016,7 +1016,7 @@ ol {
     transition: all 0.4s;
 }
 
-  .form:hover{
+.main_contact_form  .form:hover{
     border:1px solid #f1c40c;
   }
 
@@ -1037,4 +1037,52 @@ ol {
     background-color: transparent;
     position: relative;
     z-index: 9999;
+}
+
+.main_contact .btn-solven {
+    position: absolute;
+}
+
+/* image responsive */
+.image_responsive img.img-responsive {
+    position: relative;
+    bottom: -110px;
+    display: inline-block;
+    width: 80%;
+}
+
+/* footer */
+.footer {
+    background: #262626 scroll ;
+    color: #fff;
+    position: relative;
+}
+
+.main_footer { padding: 50px 0px }
+
+.logo_footer {
+    font-size: 8em;
+    color: #fff;
+}
+
+.logo_footer p { font-size: 20px }
+.social_footer { 
+    text-align: center;
+    padding: 30px 0px;
+}
+.social_footer li { 
+    display: inline-block;
+    padding: 0px 8px;
+}
+.social_footer li a {
+    font-size: 20px;
+    background: #707070;
+    border-radius: 50px;
+    padding: 2px 9px;
+    color: #262626;
+}
+
+.social_footer li a:hover {
+    background: #fc1;
+    color: #000;
 }
