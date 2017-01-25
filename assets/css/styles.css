@@ -10,6 +10,15 @@ body {
     font-weight: 300;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after { clear: both }
+.clearfix { *zoom: 1; }
+
 *,
 *:before,
 *:after {
@@ -403,198 +412,40 @@ ol {
     padding: 0;
     color: #fff;
 }
-
-.skill .container { padding: 80px 0px}
-.skill .head_title { padding-bottom: 50px}
-.skill .head_title p { text-transform:inherit}
-
-.skill-item-outer,.skill-item-outer .skill-item-label-outer { -webkit-transition:all .25s ease;-o-transition:all .25s ease}
-
-.skill-line {
-    position:relative;
-    height:5px;
-    margin-bottom:80px;
-    margin-left:14px
+.main_skill .head_title span {
+    padding-top: 40px;
+}
+.main_skill .head_title p {
+    text-transform: inherit;
+}
+.main_skill_area {
+    height: 250px;
+    margin: 50px 0px 70px 0px;
 }
 
-.skill-line .skill-scale {
-    position:relative;
-    float:left;
-    width:20%;
-    height:5px;
-    background:#fff;
+.main_skill_area canvas {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-.skill-line .skill-scale:before,.skill-line .skill-scale:first-child:after {
-    bottom:-5px;
-    zindex:10;
-    width:14px;
-    height:14px;
-    position:absolute;
-    content:"";
+.main_skill_area span {
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+    display: block;
+    line-height: 220px;
+    text-align: center;
+    width: 229px;
+    font-size: 40px;
+    font-weight: 100;
 }
 
-.skill-line .skill-scale:before {
-    right:0;
-    background:#fff;
-    -webkit-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    transform:rotate(-45deg)
+.chart {
+    position: relative;
+    left: 20px;
 }
 
-.skill-line .skill-scale.filled,.skill-line .skill-scale.filled:before { background:#fc0 }
-
-.skill-line .skill-scale:first-child:after {
-    left:-14px;
-    background:#222;
-    -webkit-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    transform:rotate(-45deg);
-}
-
-.skill-line .skill-scale:first-child.filled,.skill-line .skill-scale:first-child.filled:after{background:#fc0}
-
-.skill-line .skill-scale .skill-label {
-    position:absolute;
-    width:100%;
-    right:calc(-50% + 7px);
-    top:-30px;
-    font-size:12px;
-    font-weight:600;
-    text-align:center;
-    text-transform:uppercase;
-}
-
-@media (max-width:767px) {
-    .skill-line .skill-scale .skill-label {
-        width:200%;right:calc(-100% + 7px)
-    }
-}
-
-.skill-header {margin-bottom:50px;text-align:center}
-
-@media (min-width:768px) {
-    .skill-header {
-        width:20%;margin-bottom:20px}
-}
-
-.skill-item-outer {
-    display:block
-        ;position:relative;
-    width:140px;
-    height:140px;
-    overflow:hidden;
-    background-color:#fff;
-    border:3px solid #fff;
-    margin:30px auto;
-    cursor:pointer;
-    font-size:18px;
-    line-height:140px;
-    text-align:center;
-    -webkit-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    transform:rotate(45deg);
-    transition:all .25s ease;
-}
-
-.skill-item-outer:focus .skill-item-label-outer,.skill-item-outer:hover .skill-item-label-outer {
-    -webkit-transform:rotate(0);
-    -ms-transform:rotate(0);
-    -o-transform:rotate(0);
-    transform:rotate(0);
-    border-color:#fc0;
-}
-
-.skill-item-outer:focus .skill-item-label-outer .skill-item-label-inner,.skill-item-outer:hover .skill-item-label-outer .skill-item-label-inner {
-    color:#fc0;
-    -webkit-transform:rotate(0);
-    -ms-transform:rotate(0);
-    -o-transform:rotate(0);
-    transform:rotate(0);
-}
-
-.skill-item-outer:after {
-    content:"";
-    position:absolute;
-    top:0;right:0;bottom:0;left:0;
-    border:4px solid #fc0;
-    z-index:1;
-}
-
-.skill-item-outer .skill-item-inner {
-    display:block;
-    position:relative;
-    top:-1px;right:1px;
-    width:100%;
-    height:100%;
-    -webkit-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    transform:rotate(-45deg);
-}
-
-.skill-item-outer .skill-item-label-outer {
-    position:absolute;
-    top:50%;left:50%;
-    z-index:10;
-    width:80px;height:80px;
-    background:rgba(34,34,34,.75);
-    border:2px solid #fff;
-    margin:-40px 0 0 -40px;
-    -webkit-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    transform:rotate(45deg);
-    transition:all .25s ease;
-}
-
-.skill-item-outer .skill-item-label-outer .skill-item-label-inner {
-    width:100%;
-    height:100%;
-    color:#fff;
-    font-size:18px;
-    line-height:74px;
-    text-align:center;
-    -webkit-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    transform:rotate(-45deg);
-    -webkit-transition:all .25s ease;
-    -o-transition:all .25s ease;
-    transition:all .25s ease;
-}
-
-.skill-item-outer .skill-item-indicator-outer {
-    width:calc(140px * 1.4142);
-    height:calc(140px * 1.4142);
-    position:absolute;
-    bottom:-34px;left:-32px;
-}
-
-.skill-item-outer .skill-item-indicator-outer .skill-item-indicator-inner {
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    background:#222;
-    text-align:center;
-}
-
-.skill-item-outer {
-    background-color:#fff;
-    border:3px solid #222;
-}
-
-.skill-item-outer .skill-item-indicator-outer .skill-item-indicator-inner {background:#222}
-
-.skill-item-header { 
-    margin:20px 0 40px;
-    font-size:18px;
-    text-align:center;
-}
 
 /* services */
 .services { background: #f1f1f1 scroll }
@@ -1149,4 +1000,33 @@ ol {
 .social_footer li a:hover {
     background: #fc1;
     color: #000;
+}
+
+/* RESPONSIVE WEBSITE TO MOBILE */
+@media screen and ( width: 1024px ) {
+    .icon {
+        position: relative;
+        top: 50px;
+        left: 55px;
+    }
+}
+
+@media screen and ( width: 768px ) {
+    .navbar .navbar-collapse .navbar-nav li a {
+        padding: 15px 7px;
+    }
+    
+    .icon {
+        position: relative;
+        top: 50px;
+        left: 115px;
+    }
+    
+    .main_contact_detail {
+        word-spacing: 5px;
+        padding: 30px 20px 20px 20px;
+    }
+    .main_contact_detail br{
+        display: none;
+    }
 }
