@@ -81,7 +81,7 @@ $("#my-map").gmap3({
     map:{
       options:{
           styles: styles,
-            zoom: 8,
+            zoom: 17,
             scrollwheel: false,
             draggable: true,
             zoomControl: true,
@@ -100,20 +100,12 @@ $("#my-map").gmap3({
 $(".show-map").click(function(){ 
     if ($(".map").hasClass("opened")) {    
             $(".map").removeClass("opened");
-            $(".show-map i").removeClass("fa-minus");
+            $(".show-map i").removeData("&#xe01f;");
             $(".show-map span").text("Find out us on google map");
         }
     else {   
             $(".map").addClass("opened");
-            $(".show-map i").addClass("fa-minus");
+            $(".show-map i").addClass("&#xe01f;");
             $(".show-map span").text("now you look us !");
         }
 });
-
-
-
-
-
-
-
-

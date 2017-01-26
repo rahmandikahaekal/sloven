@@ -460,7 +460,7 @@ ol {
     position: relative;
     top: 7px;
     padding-right: 5px;
-};left: 0 
+}
 
 .services_content p {
     font-family: 'Roboto',sans-serif;
@@ -530,6 +530,16 @@ ol {
 }
 
 .item_hover:hover h3 {
+    transform: translateY(5px);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.work_title_content span {
+    transform: translateY(-20px);
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.item_hover:hover span {
     transform: translateY(5px);
     transition: all 0.3s ease-in-out 0s;
 }
@@ -702,9 +712,8 @@ ol {
     transition: 0.3s ease 0s;
 }
 
-.pricing_table .price:hover {
-    box-shadow: 0 8px 12px 0 #fc1;
-}
+.pricing_table .price:hover { box-shadow: 0 8px 12px 0 #fc1 }
+.pricing_table .columns:nth-child(2) .price:hover { box-shadow: 0 8px 12px 0 #000 }
 
 .pricing_table .price .header {
     font-size: 14px;
@@ -716,6 +725,7 @@ ol {
 .pricing_table .columns:nth-child(2) .price {
     position: relative;
     top: -30px;
+    box-shadow: 0 8px 12px 0 #f1c40c;
 }
 
 .pricing_table .columns:nth-child(2) .price .header {
@@ -917,7 +927,7 @@ ol {
 
 #my-map {
     height: 100%;
-    height: 20em;
+    height: 30em;
 }
 
 .show-map {
@@ -943,12 +953,14 @@ ol {
 
 .show-map span,
 .show-map i {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
     display: block;
     color: #ffffff;
 }
 
 .opened {
-    height: 20em;
+    height: 30em;
 }
 
 .opened .show-map {
