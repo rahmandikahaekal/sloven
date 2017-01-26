@@ -1035,3 +1035,7 @@ ol {
     .main_work .work_title_content { padding: 115px 68px }
     .image_responsive img.img-responsive { width: 300%; position: relative; top: 60px; bottom: 0;}
 }
+
+@media screen and ( width : 320px ) {
+    .image_responsive img.img-responsive { position: relative; top: 60px; bottom: 0px; display: inline-block; width: 100% }
+}
