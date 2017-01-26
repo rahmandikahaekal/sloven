@@ -81,7 +81,7 @@ $("#my-map").gmap3({
     map:{
       options:{
           styles: styles,
-            zoom: 14,
+            zoom: 8,
             scrollwheel: false,
             draggable: true,
             zoomControl: true,

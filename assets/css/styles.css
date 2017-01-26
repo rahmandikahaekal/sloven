@@ -441,10 +441,7 @@ ol {
     font-weight: 100;
 }
 
-.chart {
-    position: relative;
-    left: 20px;
-}
+.chart { position: relative;left: 20px }
 
 
 /* services */
@@ -463,7 +460,7 @@ ol {
     position: relative;
     top: 7px;
     padding-right: 5px;
-}
+};left: 0 
 
 .services_content p {
     font-family: 'Roboto',sans-serif;
@@ -1011,22 +1008,30 @@ ol {
     }
 }
 
-@media screen and ( width: 768px ) {
-    .navbar .navbar-collapse .navbar-nav li a {
-        padding: 15px 7px;
+@media screen and ( max-width: 768px ) {
+    .main_home_content h1 { font-size: 4rem }
+    .navbar .navbar-collapse .navbar-nav li a { padding: 15px 7px }
+    .head_title hr { width: 5rem }
+    .service .icon { position: relative; top: 50px; left: 115px }
+    .main_contact_detail { word-spacing: 5px; padding: 30px 20px 20px 20px;
     }
-    
-    .icon {
-        position: relative;
-        top: 50px;
-        left: 115px;
-    }
-    
-    .main_contact_detail {
-        word-spacing: 5px;
-        padding: 30px 20px 20px 20px;
-    }
-    .main_contact_detail br{
-        display: none;
-    }
+    .main_contact_detail br{ display: none }
+    .chart { display: inline-block;position: relative; left: 0px}
+    .main_work img { width: 100% }
+    .main_work .work_title_content { padding: 135px 68px}
+    .icon { left: 145px }
+    .service:hover h4 { top: 22px; margin-bottom: 15px }
+    .service:hover p { position: relative; top: 30px }
+    .services .head_title p { padding: 0 9px }
+}
+
+@media screen and ( width : 425px ) {
+    .service .icon { position: relative;left: 140px }
+    .main_work .work_title_content { padding: 155px 89px }
+    .image_responsive img.img-responsive { position: relative;top: 50px; bottom: 0; width: 100%;}
+}
+
+@media screen and ( width : 375px ) {
+    .main_work .work_title_content { padding: 115px 68px }
+    .image_responsive img.img-responsive { width: 300%; position: relative; top: 60px; bottom: 0;}
 }
