@@ -50,7 +50,7 @@ function onScroll(event){
 
       if(windowScrollPosTop >= 250) {
         jQuery(".navbar-default").css({"padding-top": "0px",
-                                       "padding-bottom": "0",
+                                       "padding-bottom": "0px",
                                        "background-color": "rgba(255,255,255,0.99)",
                                        "box-shadow": "0 1px 3px rgba(50, 50, 50, 0.4)"});
         jQuery(".navbar-default .navbar-nav li a").css({"color": "#000"});
