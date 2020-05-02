@@ -28,9 +28,32 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "assets/css/bootstrap.min.css",
+              "assets/css/font-awesome.min.css",
+              "assets/css/animate.css",
+              "assets/css/elegant-icons.css",
+              "assets/css/styles.css",
+              "assets/css/magnific-popup.css",
+              "assets/css/owl.carousel.css",
+              "assets/css/owl.theme.css"
             ],
-            "scripts": []
+            "scripts": [
+              "assets/js/modernizr-custom.js",
+              "assets/js/modernizr-custom.js",
+              "assets/js/jquery.min.js",
+              "assets/js/bootstrap.min.js",
+              "assets/js/jquery.easing.1.3.min.js",
+              "assets/js/smoothscroll.js",
+              "assets/js/jquery.nav-custom.js",
+              "assets/js/waypoints.min.js",
+              "assets/js/jquery.counterup.min.js",
+              "assets/js/wow.js",
+              "assets/js/isotope.pkgd.min.js",
+              "assets/js/owl.carousel.min.js",
+              "assets/js/jquery.magnific-popup.min.js",
+              "assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
